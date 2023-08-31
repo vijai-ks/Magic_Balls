@@ -43,6 +43,16 @@ class _Magic_BallsState extends State<Magic_Balls> {
                   ),
                 ),
               ),
+              Container(
+                child: FlatButton(
+                  onPressed: () {
+                    setState(() {});
+                  },
+                  child: Image(
+                    image: AssetImage('images/ball1.png'),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
