@@ -28,6 +28,24 @@ class _Magic_BallsState extends State<Magic_Balls> {
             ),
           ),
         ),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Center(
+                child: Text(
+                  'Think any question and press the button. \n The Balls will show the answer',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Comfortaa',
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
