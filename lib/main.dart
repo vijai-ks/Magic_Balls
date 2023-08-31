@@ -35,12 +35,30 @@ class _Magic_BallsState extends State<Magic_Balls> {
             children: [
               Center(
                 child: Text(
-                  'Think any question and press the button. \n The Balls will show the answer',
+                  'Think any question and press the button.',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'Comfortaa',
                     fontSize: 18,
                   ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  'The Balls will show the answer',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Comfortaa',
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 50,
+                width: 300,
+                child: Divider(
+                  color: Colors.white,
+                  thickness: 2,
                 ),
               ),
               FlatButton(
