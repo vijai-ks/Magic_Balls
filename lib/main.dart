@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(Magic_Balls());
@@ -10,6 +11,13 @@ class Magic_Balls extends StatefulWidget {
 }
 
 class _Magic_BallsState extends State<Magic_Balls> {
+  int ball_count = 1;
+
+  int generateBallCount() {
+    int randomNumber = Random().nextInt(5) + 1;
+    return randomNumber;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -63,10 +71,12 @@ class _Magic_BallsState extends State<Magic_Balls> {
               ),
               FlatButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    ball_count = generateBallCount();
+                  });
                 },
                 child: Image(
-                  image: AssetImage('images/ball1.png'),
+                  image: AssetImage('images/ball$ball_count.png'),
                 ),
               ),
             ],
