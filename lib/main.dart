@@ -14,9 +14,18 @@ class _Magic_BallsState extends State<Magic_Balls> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.lightBlueAccent,
         appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
           title: Center(
-            child: Text('Ask me Anything'),
+            child: Text(
+              'Ask me Anything',
+              style: TextStyle(
+                fontFamily: 'Comfortaa',
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
+            ),
           ),
         ),
       ),
